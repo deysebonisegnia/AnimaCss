@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient( to bottom right, #023617, #024b25, #047245, #0aee7c );
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    animation: change 10s ease-in-out infinite;
+}
+
+p {
+    font-size: 50px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 2px 3px 4px #000;
+}
+
+@keyframes change {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0 50%; }
+}
+
