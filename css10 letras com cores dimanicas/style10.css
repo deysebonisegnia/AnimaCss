@@ -1,35 +1,37 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: rgb(145, 145, 145);
-    background-color:black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(145, 145, 145);
+  background-color: black;
 }
 span {
-    font-family: Roboto;
-    text-transform: uppercase;
-    font-size: 100px;
-    position: relative;
-    color: rgb(202, 202, 202);
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-size: 100px;
+  position: relative;
+  color: rgb(202, 202, 202);
 }
 span::before {
-    content: attr(data-text);
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0%;
-    background-image: linear-gradient(to right, #FF5F6D, #FFC371);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    overflow: hidden;
-    transition: all 1.3s;
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  overflow: hidden;
+  transition: all 1.3s;
 }
-span:hover::before { width: 100%; }
+span:hover::before {
+  width: 100%;
+}

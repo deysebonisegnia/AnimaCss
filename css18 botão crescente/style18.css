@@ -1,50 +1,48 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #330f66;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #330f66;
 }
 .button {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    border-radius: 100px;
-    position: relative;
-    color: #080808;
-    font-size: 20px;
-    font-family: "Roboto";
-    font-weight: 600;
-    line-height: 1.5;
-    cursor: pointer;
-    background-color: #fff;
-    transition: all .2s;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 100px;
+  position: relative;
+  color: #080808;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.2s;
 }
 .button::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    border-radius: 10rem;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all .5s;
-    
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
 }
 .button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 1rem 2rem rgba(4, 4, 4, 0.855);
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(4, 4, 4, 0.855);
 }
 .button:hover::after {
-    transform: scaleY(1.5) scaleX(1.7);
-    opacity: 0;
+  transform: scaleY(1.5) scaleX(1.7);
+  opacity: 0;
 }
-

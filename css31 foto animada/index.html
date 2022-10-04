@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foto Animada</title>
-</head>
-<body> 
+  </head>
+  <body>
     <div class="body">
-<style rel="stylesheet" scoped="scoped" type="text/css">.body{
-  background:rgb(100, 20, 10);
-  background-image: url("foto de perfil_edited.jpg"); 
-  background-repeat: repeat-y;/*Define que a imagem irá repetir no eixo y, ou seja na vertical.*/
-  height: auto;/*Define o tamanho da altura usada em auto.*/
-  left: 0;/*Define a posição horizontal da página começando do primeiro pixel.*/
-  position: absolute;/*Define a orientação da página, ficando fixa.*/
-  top: 0;/*Define o início da página na parte superior,*/
-  width: 100%;/*Define a largura da página para ser aproveitada toda.*/
-  /*Aqui é definida a animação para rodar em 4 segundos em linha reta sem parar.*/
-  animation: snow 4s linear infinite;
-  /*Abaixo é feita a mesma configuração de animação para diferentes prefixos de navegadores.*/
-  -webkit-animation: snow 4s linear infinite;
-  -moz-animation: snow 4s linear infinite;
-  -ms-animation: snow 4s linear infinite;
-  }
-  /*Aqui são definidas as posições da imagem.*/  
-  @keyframes snow {
-    /*Primeiro a posição zero da imagem.*/
-    0% {background-position: center 0%, center 0%, center 0%;}
-    /*Depois a posição final.*/
-    100% {background-position: center 1120px, center 1120px, center 1120px;}
-  }
-  /*Abaixo é feita a mesma configuração de keyfranes para diferentes prefixos de navegadores.*/
-  @-moz-keyframes snow {
-    0% {background-position: center 0%, center 0%, center 0%;}
-    100% {background-position: center 1120px, center 1120px, center 1120px;}
-  }
-  @-webkit-keyframes snow {
-    0% {background-position: center 0%, center 0%, center 0%;}
-    100% {background-position: center 1120px, center 1120px, center 1120px;}
-  }
-  @-ms-keyframes snow {
-    0% {background-position: center 0%, center 0%, center 0%;}
-    100% {background-position: center 1120px, center 1120px, center 1120px;}
-  }
-</style>
-<div class="container">
-<style rel="stylesheet" scoped="scoped" type="text/css">
-  .container{
-      /*Abaixo é definido o tamanho da tela.*/
-      max-width: 600px;
-      max-height: 800px;
-      width: 600px;
-      height: 800px;
-      margin: 0 auto;
-    }
-</style>
-
-</div>
-</div>
-
-
-</body>
+      <style rel="stylesheet" scoped="scoped" type="text/css">
+        .body {
+          background: rgb(100, 20, 10);
+          background-image: url("foto de perfil_edited.jpg");
+          background-repeat: repeat-y; /*Define que a imagem irá repetir no eixo y, ou seja na vertical.*/
+          height: auto; /*Define o tamanho da altura usada em auto.*/
+          left: 0; /*Define a posição horizontal da página começando do primeiro pixel.*/
+          position: absolute; /*Define a orientação da página, ficando fixa.*/
+          top: 0; /*Define o início da página na parte superior,*/
+          width: 100%; /*Define a largura da página para ser aproveitada toda.*/
+          /*Aqui é definida a animação para rodar em 4 segundos em linha reta sem parar.*/
+          animation: snow 4s linear infinite;
+          /*Abaixo é feita a mesma configuração de animação para diferentes prefixos de navegadores.*/
+          -webkit-animation: snow 4s linear infinite;
+          -moz-animation: snow 4s linear infinite;
+          -ms-animation: snow 4s linear infinite;
+        }
+        /*Aqui são definidas as posições da imagem.*/
+        @keyframes snow {
+          /*Primeiro a posição zero da imagem.*/
+          0% {
+            background-position: center 0%, center 0%, center 0%;
+          }
+          /*Depois a posição final.*/
+          100% {
+            background-position: center 1120px, center 1120px, center 1120px;
+          }
+        }
+        /*Abaixo é feita a mesma configuração de keyfranes para diferentes prefixos de navegadores.*/
+        @-moz-keyframes snow {
+          0% {
+            background-position: center 0%, center 0%, center 0%;
+          }
+          100% {
+            background-position: center 1120px, center 1120px, center 1120px;
+          }
+        }
+        @-webkit-keyframes snow {
+          0% {
+            background-position: center 0%, center 0%, center 0%;
+          }
+          100% {
+            background-position: center 1120px, center 1120px, center 1120px;
+          }
+        }
+        @-ms-keyframes snow {
+          0% {
+            background-position: center 0%, center 0%, center 0%;
+          }
+          100% {
+            background-position: center 1120px, center 1120px, center 1120px;
+          }
+        }
+      </style>
+      <div class="container">
+        <style rel="stylesheet" scoped="scoped" type="text/css">
+          .container {
+            /*Abaixo é definido o tamanho da tela.*/
+            max-width: 600px;
+            max-height: 800px;
+            width: 600px;
+            height: 800px;
+            margin: 0 auto;
+          }
+        </style>
+      </div>
+    </div>
+  </body>
 </html>
